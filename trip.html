@@ -1,14 +1,69 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Reisebuchungs-Formular</title>
+    <meta charset="UTF-8">
+    <title>Reisebuchungs-Formular</title>
 
 </head>
 <body>
-
 <h1>Reisebuchungs-Formular</h1>
-
-
+<form>
+    <fieldset>
+        <legend>Abflughafen</legend>
+        <label>Abflughafen:
+            <select name="abflughafen">
+                <optgroup label="Österreich">
+                    <option label="Wien">Wien</option>
+                    <option label="Linz">Linz</option>
+                </optgroup>
+                <optgroup label="Deutschland">
+                    <option label="Berlin"></option>
+                    <option label="Bayern"></option>
+                </optgroup>
+                <optgroup label="Frankreich">
+                    <option label="Lyon"></option>
+                    <option label="Paris"></option>
+                </optgroup>
+                <optgroup label="Italien">
+                    <option label="Rom"></option>
+                    <option label="Vendedig"></option>
+                </optgroup>
+            </select>
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Unterkunft</legend>
+        <label>Unterkunft:
+            <input type="radio" id="Hotel" name="Unterkunft" value="Hotel">
+            <label for="Hotel">Hotel</label>
+            <input type="radio" id="Ferienwohnung" name="Unterkunft" value="Ferienwohnung">
+            <label for="Ferienwohnung">Ferienwohnung</label>
+            <input type="radio" id="Hostel" name="Unterkunft" value="Hostel">
+            <label for="Hostel">Hostel</label>
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>zusätzlliche Dienstleistungen</legend>
+        <label>zusätzlliche Dienstleistungen:
+            <input type="checkbox" id="check1" name="DL" value="Reiseversicherung">
+            <label for="check1">Reiseversicherung</label>
+            <input type="checkbox" id="check2" name="DL" value="Flughafentransfer">
+            <label for="check2">Flughafentransfer </label>
+            <input type="checkbox" id="check3" name="DL" value="zusätzliches Gepäck">
+            <label for="check3">zusätzliches Gepäck</label>
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Zeit</legend>
+        <label>Zeit: <br>
+            <label for="d1">Abreise:</label>
+            <input type="date" id="d1">
+            <label for="d2">Ankunft:</label>
+            <input type="date" id="d2">
+            <label for="d3">Reise in Tage(1-21):</label>
+            <input type="number" id="d3" max="21" min="1">
+        </label>
+    </fieldset>
+</form>
 </body>
 </html>
